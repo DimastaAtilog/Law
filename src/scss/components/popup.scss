@@ -1,0 +1,132 @@
+@use '../_vars.scss' as *;
+.popup {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(255, 255, 255, 0.9) 4%,
+    rgba(255, 255, 255, 1) 50%
+  );
+  &-closeBtn {
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid #3f3f3f;
+    height: 14px;
+    width: 14px;
+    padding: 10px;
+    margin: 0 10px 0 0;
+    &:hover {
+      border: 1px solid #ff8a00;
+    }
+  }
+  &-logo {
+    display: inline-block;
+    max-width: 238px;
+    max-height: 162px;
+  }
+  &-logoContainer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 34px;
+    margin-left: 38px;
+  }
+  &-title {
+    font-size: 65px;
+    text-align: center;
+    margin: 210px 0 0 0;
+    font-family: "montserrat-regular";
+  }
+  &-loginBox {
+    padding: 0 15px;
+    position: relative;
+    margin: 0 auto;
+    width: 570px;
+    max-width: 100%;
+    padding-top: 40px;
+    box-sizing: border-box;
+  }
+  input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #3f3f3f;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #3f3f3f;
+    outline: none;
+    background: transparent;
+  }
+  label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #3f3f3f;
+    pointer-events: none;
+    transition: 0.3s;
+    font-family: "open_sansregular";
+  }
+  &-formBtn {
+    margin: 0 auto;
+    margin-top: 17px;
+    max-width: 230px;
+    background: #ff8a00;
+    border-radius: 2px;
+  }
+  &-formBtnLink {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 18px 1px;
+    font-weight: 800;
+    font-family: "open_sansbold";
+    font-size: 18px;
+  }
+}
+
+.popup-loginBox .popup-box {
+  position: relative;
+}
+
+.popup-loginBox .popup-box input:focus ~ label,
+.popup-loginBox .popup-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #3f3f3f;
+  font-size: 12px;
+}
+
+@media (max-width: 850px) {
+  .popup {
+    &-logo {
+      max-width: 100px;
+    }
+    &-logoContainer {
+      padding: 10px 0 0 0;
+      margin: 10px 0 0 10px;
+    }
+    &-title {
+      font-size: 48px;
+      margin-top: 17%;
+    }
+  }
+  &-formBtn {
+    margin-top: 4px;
+  }
+}
+@media (max-width: 480px) {
+  .popup {
+    &-title {
+      font-size: 36px;
+      margin-top: 12%;
+    }
+  }
+}
