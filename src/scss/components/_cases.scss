@@ -1,0 +1,313 @@
+
+body {
+  background: #fcf8f8;
+}
+.cases {
+  padding: 210px 0 136px 0;
+  background: #fcf8f8;
+}
+.casesTitle {
+  &-titleWrapper {
+    text-align: center;
+  }
+  &-title {
+    font-family: "montserrat-bold";
+    font-size: 64px;
+    line-height: 89.6px;
+    margin: 0 0 33px 0;
+  }
+  &-description {
+    margin: 0 auto;
+    font-family: "open_sansregular";
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: 0em;
+    max-width: 808px;
+  }
+  &-selectsWrapper {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin: 100px 0 0 0;
+  }
+
+  select {
+    width: 100%;
+    height: 40px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #3f3f3f;
+    color: #3f3f3f;
+    appearance: none;
+    padding: 10px;
+    padding-right: 38px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  .dropdown-container {
+    &--margin {
+      margin-right: 100px;
+    }
+    display: block;
+    max-width: 351px;
+    width: 100%;
+    position: relative;
+  }
+}
+
+/* For IE <= 11 */
+select::-ms-expand {
+  display: none;
+}
+
+.select-icon {
+  position: absolute;
+  top: 11px;
+  right: 4px;
+  width: 30px;
+  height: 36px;
+  pointer-events: none;
+  padding-left: 5px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+select:hover,
+select:focus {
+  color: #3f3f3f;
+}
+
+select:hover ~ .select-icon svg.icon,
+select:focus ~ .select-icon svg.icon {
+  fill: #c0392b;
+}
+//cases list section
+.casesList {
+  background: #fcf8f8;
+
+  &-mainCase {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &-mainCaseWrapper {
+    background: url("../assets/bearsBG.png") no-repeat;
+    background-size: 1470px auto;
+  }
+  &-caseContainer {
+    overflow: hidden;
+    box-shadow: 20px 20px 50px rgba(196, 196, 196, 0.36);
+    background: #ffffff;
+    max-width: 560px;
+    padding: 0 0 70px 0;
+    &--bigWidth {
+      max-width: 881px;
+      margin: 62px 0 62px 0;
+      padding: 0 0 62px 0;
+    }
+  }
+  &-arrowsWrapper {
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 230px;
+  }
+  &-case {
+    position: relative;
+    margin: 85px 0 0 98px;
+    &--bigMargin {
+      margin: 85px 0 0 70px;
+    }
+
+  }
+  &-caseTitle {
+    max-width: 427px;
+    font-family: "montserrat-bold";
+    font-size: 30px;
+    color: #3f3f3f;
+    &--orange {
+      margin: 15px 0 0 0;
+      color: #ff8a00;
+    }
+    &--minWidth {
+      max-width: 366px;
+      line-height: 45px;
+    }
+  }
+  &-caseTxt {
+    display: inline-block;
+    font-size: 14px;
+    color: #d0c5c5;
+    font-family: "open_sansregular";
+    margin: 31px 9px 30px 0;
+
+    &--orange {
+      font-family: "open_sansitalic";
+      color: #ff8a00;
+    }
+  }
+  &-caseDescription {
+    position: relative;
+    font-family: "open_sansregular";
+    letter-spacing: 0em;
+    max-width: 739px;
+    line-height: 32px;
+    font-size: 20px;
+    color: #3f3f3f;
+    padding: 0 0 210px 0;
+    &--lessPadding {
+      max-width: 398px;
+      padding: 0 70px 55px 0;
+    }
+  }
+  &-otherCases {
+    background: #fcf8f8;
+    margin: 52px 0 65px 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  &-arrowWrapper {
+    span {
+      color: #3f3f3f;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-family: "open_sansregular";
+      line-height: 22.88px;
+    }
+    &--allignEnd {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  }
+  &-casesListPages {
+    font-family: "open_sansbold_semibold";
+    font-size: 14px;
+    line-height: 19px;
+    color: #3f3f3f;
+    text-align: center;
+    margin: 25px 0 0 0;
+    padding: 63px;
+  }
+}
+.caseBtn {
+    display: flex;
+    position: relative;
+    font-size: 18px;
+    line-height: 24px;
+    font-style: italic;
+    align-items: center;
+    transform: translateX(40px);
+    justify-content: flex-end;
+    transition: .2s transform ease-in-out;
+    z-index: 1;
+  &-link {
+    font-family: "open_sansitalic";
+    font-style: italic;
+    font-weight: 600;
+    font-size: 18px;
+    color: #3f3f3f;
+    text-decoration: none;
+    margin: 0 17px 0 0;
+    // &::after {
+    //   vertical-align: center;
+    //   content: "";
+    //   display: inline-block;
+    //   width: 40px;
+    //   height: 2px;
+    //   background: #3f3f3f;
+    //   margin-left: 17px;
+    //   display: inline-block;
+    //   vertical-align: middle;
+    // }
+  }
+}
+.blackBtn {
+  background: #3f3f3f;
+  border-radius: 50px;
+  max-width: 230px;
+  text-align: center;
+  margin: 0 auto;
+  &-link {
+    display: inline-block;
+    text-decoration: none;
+    font-family: "open_sansbold";
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 29px;
+    padding: 21px 65px 16px 65px;
+  }
+}
+
+.wideArrow {
+  position: relative;
+  width: 80px;
+  height: 2px;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0;
+    margin-top: -3px;
+    width: 6px;
+    height: 6px;
+    border: 2px solid #3f3f3f;
+    border-top: none;
+    border-right: none;
+    transform: rotate(45deg);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #3f3f3f;
+  }
+  &-right {
+    position: relative;
+    transform: rotate(180deg);
+  }
+}
+.casesList-caseContainer:hover .casesList-caseBtn{
+	transform: translateX(-40px);
+}
+.casesList-caseContainer:hover .circle_2{
+	transition: .2s right ease-out .4s;
+	right: -80px;
+}
+.casesList-caseContainer:hover .circle{
+  transition: .1s transform ease-in-out .2s;
+	transform: translateX(calc(-50% - 300px));
+}
+
+.circle_2{
+  position: absolute;
+	right: 150%;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 122px;
+	height: 122px;
+	background: #FF8A00;
+	border-radius: 50%;
+	opacity: .5;
+  z-index: -1;
+}
+
+.circle {
+  position: absolute;
+	right: 50%;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 122px;
+	height: 122px;
+	background: #FF8A00;
+	border-radius: 50%;
+	opacity: .5;
+	z-index: -1;
+}

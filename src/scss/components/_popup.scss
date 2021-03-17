@@ -1,5 +1,5 @@
 @use '../_vars.scss' as *;
-.popup {
+.popupConsult {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -92,12 +92,12 @@
   }
 }
 
-.popup-loginBox .popup-box {
+.popupConsult-loginBox .popupConsult-box {
   position: relative;
 }
 
-.popup-loginBox .popup-box input:focus ~ label,
-.popup-loginBox .popup-box input:valid ~ label {
+.popupConsult-loginBox .popupConsult-box input:focus ~ label,
+.popupConsult-loginBox .popupConsult-box input:valid ~ label {
   top: -20px;
   left: 0;
   color: #3f3f3f;
@@ -105,7 +105,7 @@
 }
 
 @media (max-width: 850px) {
-  .popup {
+  .popupConsult {
     &-logo {
       max-width: 100px;
     }
@@ -123,7 +123,7 @@
   }
 }
 @media (max-width: 480px) {
-  .popup {
+  .popupConsult {
     &-title {
       font-size: 36px;
       margin-top: 12%;

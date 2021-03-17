@@ -1,0 +1,441 @@
+@font-face {
+  font-family: 'open_sansbold';
+  src: url("../fonts/OpenSans/opensans-bold-webfont.woff2") format("woff2"), url("../fonts/OpenSans/opensans-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sansbold_italic';
+  src: url("../fonts/OpenSans/opensans-bolditalic-webfont.woff2") format("woff2"), url("../fonts/OpenSans/opensans-bolditalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sansbold_semibold';
+  src: url("../fonts/OpenSans/OpenSans-SemiBold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sansitalic';
+  src: url("../fonts/OpenSans/opensans-italic-webfont.woff2") format("woff2"), url("../fonts/OpenSans/opensans-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sansregular';
+  src: url("../fonts/OpenSans/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/OpenSans/opensans-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserrat-regular';
+  src: url("../fonts/Montserrat/montserrat-regular-webfont.woff2") format("woff2"), url("../fonts/Montserrat/montserrat-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserrat-bold';
+  src: url("../fonts/Montserrat/montserrat-bold-webfont.woff2") format("woff2"), url("../fonts/Montserrat/montserrat-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container {
+  max-width: 1837px;
+  margin: 0 auto;
+}
+
+body {
+  background: #fcf8f8;
+}
+
+.cases {
+  padding: 210px 0 136px 0;
+  background: #fcf8f8;
+}
+
+.casesTitle-titleWrapper {
+  text-align: center;
+}
+
+.casesTitle-title {
+  font-family: "montserrat-bold";
+  font-size: 64px;
+  line-height: 89.6px;
+  margin: 0 0 33px 0;
+}
+
+.casesTitle-description {
+  margin: 0 auto;
+  font-family: "open_sansregular";
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: 0em;
+  max-width: 808px;
+}
+
+.casesTitle-selectsWrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 100px 0 0 0;
+}
+
+.casesTitle select {
+  width: 100%;
+  height: 40px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #3f3f3f;
+  color: #3f3f3f;
+  appearance: none;
+  padding: 10px;
+  padding-right: 38px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.casesTitle .dropdown-container {
+  display: block;
+  max-width: 351px;
+  width: 100%;
+  position: relative;
+}
+
+.casesTitle .dropdown-container--margin {
+  margin-right: 100px;
+}
+
+/* For IE <= 11 */
+select::-ms-expand {
+  display: none;
+}
+
+.select-icon {
+  position: absolute;
+  top: 11px;
+  right: 4px;
+  width: 30px;
+  height: 36px;
+  pointer-events: none;
+  padding-left: 5px;
+  -webkit-transition: background-color 0.3s ease, border-color 0.3s ease;
+  -o-transition: background-color 0.3s ease, border-color 0.3s ease;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+select:hover,
+select:focus {
+  color: #3f3f3f;
+}
+
+select:hover ~ .select-icon svg.icon,
+select:focus ~ .select-icon svg.icon {
+  fill: #c0392b;
+}
+
+.casesList {
+  background: #fcf8f8;
+}
+
+.casesList-mainCase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.casesList-mainCaseWrapper {
+  background: url("../assets/bearsBG.png") no-repeat;
+  background-size: 1470px auto;
+}
+
+.casesList-caseContainer {
+  overflow: hidden;
+  -webkit-box-shadow: 20px 20px 50px rgba(196, 196, 196, 0.36);
+          box-shadow: 20px 20px 50px rgba(196, 196, 196, 0.36);
+  background: #ffffff;
+  max-width: 560px;
+  padding: 0 0 70px 0;
+}
+
+.casesList-caseContainer--bigWidth {
+  max-width: 881px;
+  margin: 62px 0 62px 0;
+  padding: 0 0 62px 0;
+}
+
+.casesList-arrowsWrapper {
+  margin: 0 auto;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 230px;
+}
+
+.casesList-case {
+  position: relative;
+  margin: 85px 0 0 98px;
+}
+
+.casesList-case--bigMargin {
+  margin: 85px 0 0 70px;
+}
+
+.casesList-caseTitle {
+  max-width: 427px;
+  font-family: "montserrat-bold";
+  font-size: 30px;
+  color: #3f3f3f;
+}
+
+.casesList-caseTitle--orange {
+  margin: 15px 0 0 0;
+  color: #ff8a00;
+}
+
+.casesList-caseTitle--minWidth {
+  max-width: 366px;
+  line-height: 45px;
+}
+
+.casesList-caseTxt {
+  display: inline-block;
+  font-size: 14px;
+  color: #d0c5c5;
+  font-family: "open_sansregular";
+  margin: 31px 9px 30px 0;
+}
+
+.casesList-caseTxt--orange {
+  font-family: "open_sansitalic";
+  color: #ff8a00;
+}
+
+.casesList-caseDescription {
+  position: relative;
+  font-family: "open_sansregular";
+  letter-spacing: 0em;
+  max-width: 739px;
+  line-height: 32px;
+  font-size: 20px;
+  color: #3f3f3f;
+  padding: 0 0 210px 0;
+}
+
+.casesList-caseDescription--lessPadding {
+  max-width: 398px;
+  padding: 0 70px 55px 0;
+}
+
+.casesList-otherCases {
+  background: #fcf8f8;
+  margin: 52px 0 65px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.casesList-arrowWrapper span {
+  color: #3f3f3f;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "open_sansregular";
+  line-height: 22.88px;
+}
+
+.casesList-arrowWrapper--allignEnd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.casesList-casesListPages {
+  font-family: "open_sansbold_semibold";
+  font-size: 14px;
+  line-height: 19px;
+  color: #3f3f3f;
+  text-align: center;
+  margin: 25px 0 0 0;
+  padding: 63px;
+}
+
+.caseBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  font-size: 18px;
+  line-height: 24px;
+  font-style: italic;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateX(40px);
+      -ms-transform: translateX(40px);
+          transform: translateX(40px);
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-transition: .2s transform ease-in-out;
+  -o-transition: .2s transform ease-in-out;
+  transition: .2s transform ease-in-out;
+  z-index: 1;
+}
+
+.caseBtn-link {
+  font-family: "open_sansitalic";
+  font-style: italic;
+  font-weight: 600;
+  font-size: 18px;
+  color: #3f3f3f;
+  text-decoration: none;
+  margin: 0 17px 0 0;
+}
+
+.blackBtn {
+  background: #3f3f3f;
+  border-radius: 50px;
+  max-width: 230px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.blackBtn-link {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "open_sansbold";
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 29px;
+  padding: 21px 65px 16px 65px;
+}
+
+.wideArrow {
+  position: relative;
+  width: 80px;
+  height: 2px;
+}
+
+.wideArrow::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0;
+  margin-top: -3px;
+  width: 6px;
+  height: 6px;
+  border: 2px solid #3f3f3f;
+  border-top: none;
+  border-right: none;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.wideArrow::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #3f3f3f;
+}
+
+.wideArrow-right {
+  position: relative;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.casesList-caseContainer:hover .casesList-caseBtn {
+  -webkit-transform: translateX(-40px);
+      -ms-transform: translateX(-40px);
+          transform: translateX(-40px);
+}
+
+.casesList-caseContainer:hover .circle_2 {
+  -webkit-transition: .2s right ease-out .4s;
+  -o-transition: .2s right ease-out .4s;
+  transition: .2s right ease-out .4s;
+  right: -80px;
+}
+
+.casesList-caseContainer:hover .circle {
+  -webkit-transition: .1s transform ease-in-out .2s;
+  -o-transition: .1s transform ease-in-out .2s;
+  transition: .1s transform ease-in-out .2s;
+  -webkit-transform: translateX(calc(-50% - 300px));
+      -ms-transform: translateX(calc(-50% - 300px));
+          transform: translateX(calc(-50% - 300px));
+}
+
+.circle_2 {
+  position: absolute;
+  right: 150%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 122px;
+  height: 122px;
+  background: #FF8A00;
+  border-radius: 50%;
+  opacity: .5;
+  z-index: -1;
+}
+
+.circle {
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 122px;
+  height: 122px;
+  background: #FF8A00;
+  border-radius: 50%;
+  opacity: .5;
+  z-index: -1;
+}

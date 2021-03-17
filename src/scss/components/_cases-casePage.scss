@@ -1,0 +1,110 @@
+@mixin title {
+  color: #3f3f3f;
+  text-align: center;
+  font-family: "montserrat-bold";
+  font-size: 64px;
+}
+
+.case {
+  background-color: #fcf8f8;
+  padding: 235px 0 0 0;
+  &-logoWrapper {
+    text-align: center;
+    &-logo {
+      display: inline-block;
+      width: 150px;
+      height: 150px;
+    }
+  }
+  &-title {
+    @include title;
+    margin: 54px 0 55px 0;
+    text-align: center;
+    font-family: "montserrat-bold";
+    font-size: 64px;
+    line-height: 140%;
+    color: #3f3f3f;
+  }
+  &-titleDescription {
+    font-family: "open_sansregular";
+    font-size: 20px;
+    line-height: 160%;
+    margin: 0 auto;
+    text-align: center;
+    color: #3f3f3f;
+    max-width: 1073px;
+  }
+  &-titleTxtWrapper {
+    text-align: center;
+    margin: 72px 0 0 0;
+    padding: 0 0 234px;
+  }
+  &-caseTxt {
+    display: inline-block;
+    font-size: 14px;
+    color: #d0c5c5;
+    font-family: "open_sansregular";
+    margin: 0 9px 0 0;
+
+    &--orange {
+      font-family: "open_sansitalic";
+      color: #ff8a00;
+    }
+  }
+}
+.caseDescription {
+  padding: 0 0 110px 0;
+  border: 1px solid red;
+  &-wrapper {
+    max-width: 1617px;
+    margin: 0 auto;
+    margin-top: 153px;
+    position: relative;
+  }
+  &-case {
+    position: relative;
+    padding: 94px 0 0 0;
+  }
+  &-title {
+    font-family: "montserrat-bold";
+    font-size: 30px;
+    line-height: 150%;
+    color: #3f3f3f;
+  }
+  &-description {
+    font-family: "open_sansregular";
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+    max-width: 807px;
+    margin-bottom: 27px;
+    &--moreMargin {
+      margin-top: 28px;
+    }
+  }
+  &-greyDesignedBox {
+    position: absolute;
+    width: 430px;
+    height: 1037px;
+    background: #c4c4c4;
+    opacity: 0.2;
+    right: 0;
+  }
+  &-salmonDesignedBox {
+position: absolute;
+width: 442px;
+height: 376px;
+right: 179px;
+top: 550px;
+background: #FF8A00;
+opacity: 0.5;
+transform: rotate(180deg);
+  }
+}
+.caseDocuments {
+  &-title {
+    @include title;
+    margin: 210px 0 80px 0;
+    
+  }
+}

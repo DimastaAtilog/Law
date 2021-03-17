@@ -13,6 +13,12 @@
     font-style: normal;
 }
 @font-face {
+    font-family: 'open_sansbold_semibold';
+    src:  url('../fonts/OpenSans/OpenSans-SemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
     font-family: 'open_sansitalic';
     src: url('../fonts/OpenSans/opensans-italic-webfont.woff2') format('woff2'),
          url('../fonts/OpenSans/opensans-italic-webfont.woff') format('woff');

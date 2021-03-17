@@ -48,39 +48,45 @@
 }
 
 @use '../_vars.scss' as *;
-.popupConsult {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: white;
-  background: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(0%, rgba(255, 255, 255, 0.9)), color-stop(4%, rgba(255, 255, 255, 0.9)), color-stop(50%, white));
-  background: -o-linear-gradient(bottom, white 0%, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 4%, white 50%);
-  background: linear-gradient(0deg, white 0%, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 4%, white 50%);
+.thankyou {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #b8b8b8;
+  background: -o-linear-gradient(270.62deg, #2e2d2d 67.07%, rgba(46, 45, 45, 0.85) 94.72%);
+  background: linear-gradient(179.38deg, #2e2d2d 67.07%, rgba(46, 45, 45, 0.85) 94.72%);
 }
 
-.popupConsult-closeBtn {
+.thankyou-closeBtn {
   display: inline-block;
+  height: 35px;
+  width: 35px;
+  margin: 0 42px 0 0;
   border-radius: 50%;
-  border: 1px solid #3f3f3f;
-  height: 14px;
-  width: 14px;
-  padding: 10px;
-  margin: 0 10px 0 0;
 }
 
-.popupConsult-closeBtn:hover {
+.thankyou-closeBtn:hover {
+  cursor: pointer;
   border: 1px solid #ff8a00;
 }
 
-.popupConsult-logo {
+.thankyou-wrapper {
+  height: 100vh;
+  background: url("../assets/firstscreen.jpg") no-repeat center top/contain;
+}
+
+.thankyou-logo {
   display: inline-block;
   max-width: 238px;
   max-height: 162px;
 }
 
-.popupConsult-logoContainer {
+.thankyou-logoContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,100 +97,75 @@
   margin-left: 38px;
 }
 
-.popupConsult-title {
+.thankyou-title {
+  color: #ffffff;
   font-size: 65px;
   text-align: center;
-  margin: 210px 0 0 0;
-  font-family: "montserrat-regular";
+  margin: 240px 0 0 0;
+  font-family: "montserrat-bold";
 }
 
-.popupConsult-loginBox {
-  padding: 0 15px;
-  position: relative;
-  margin: 0 auto;
-  width: 570px;
-  max-width: 100%;
-  padding-top: 40px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.popupConsult input {
-  width: 100%;
-  padding: 10px 0;
-  font-size: 16px;
-  color: #3f3f3f;
-  margin-bottom: 30px;
-  border: none;
-  border-bottom: 1px solid #3f3f3f;
-  outline: none;
-  background: transparent;
-}
-
-.popupConsult label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 10px 0;
-  font-size: 16px;
-  color: #3f3f3f;
-  pointer-events: none;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
+.thankyou-description {
+  max-width: 710px;
   font-family: "open_sansregular";
-}
-
-.popupConsult-formBtn {
+  color: #ffffff;
+  font-size: 20px;
   margin: 0 auto;
-  margin-top: 17px;
-  max-width: 230px;
-  background: #ff8a00;
-  border-radius: 2px;
-}
-
-.popupConsult-formBtnLink {
-  display: block;
+  margin-top: 65px;
   text-align: center;
+  line-height: 32px;
+}
+
+.thankyou-btnContainer {
+  text-align: center;
+}
+
+.thankyou-btnLink {
+  color: #ffffff;
   text-decoration: none;
-  color: #fff;
-  padding: 18px 1px;
-  font-weight: 800;
-  font-family: "open_sansbold";
   font-size: 18px;
+  text-align: center;
+  display: inline-block;
+  font-family: "open_sansbold";
+  margin-top: 75px;
 }
 
-.popupConsult-loginBox .popupConsult-box {
-  position: relative;
+.thankyou-btnLink:hover {
+  cursor: pointer;
+  color: #ff8a00;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
 }
 
-.popupConsult-loginBox .popupConsult-box input:focus ~ label,
-.popupConsult-loginBox .popupConsult-box input:valid ~ label {
-  top: -20px;
-  left: 0;
-  color: #3f3f3f;
-  font-size: 12px;
+.thankyou-btnLink::before {
+  display: inline-block;
+  content: "";
+  width: 30px;
+  height: 2px;
+  background: #ffffff;
+  margin: 0 25px 0 0;
 }
 
 @media (max-width: 850px) {
-  .popupConsult-logo {
+  .thankyou-closeBtn {
+    margin: 0;
+  }
+  .thankyou-logo {
     max-width: 100px;
   }
-  .popupConsult-logoContainer {
+  .thankyou-logoContainer {
     padding: 10px 0 0 0;
-    margin: 10px 0 0 10px;
+    margin: 10px 10px 0 10px;
   }
-  .popupConsult-title {
+  .thankyou-title {
     font-size: 48px;
     margin-top: 17%;
-  }
-  -formBtn {
-    margin-top: 4px;
   }
 }
 
 @media (max-width: 480px) {
-  .popupConsult-title {
+  .thankyou-title {
     font-size: 36px;
     margin-top: 12%;
   }
