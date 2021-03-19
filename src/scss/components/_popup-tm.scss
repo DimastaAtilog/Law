@@ -1,0 +1,208 @@
+@use '../_vars.scss' as *;
+.popupTm {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(255, 255, 255, 0.9) 4%,
+    rgba(255, 255, 255, 1) 50%
+  );
+  &-closeBtn {
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid #3f3f3f;
+    height: 14px;
+    width: 14px;
+    padding: 10px;
+    margin: 0 10px 0 0;
+    &:hover {
+      border: 1px solid #ff8a00;
+    }
+  }
+  &-logo {
+    display: inline-block;
+    max-width: 238px;
+    max-height: 162px;
+  }
+  &-logoContainer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 34px;
+    margin-left: 38px;
+  }
+  &-title {
+    text-align: center;
+    margin-top: 195px;
+    font-family: "montserrat-bold";
+    font-size: 64px;
+  }
+  &-choosenContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 74px;
+    align-items: center;
+  }
+  &-choosenTitle {
+    font-family: "montserrat-bold";
+    font-size: 30px;
+    margin: 0 32px 0 0;
+    color: #3f3f3f;
+  }
+  &-choosenElements {
+    width: 70px;
+    height: 70px;
+    font-family: "open_sansbold";
+    background: #2e2d2d;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    line-height: 180%;
+    margin: 0 21px 0 0;
+    color: #ffffff;
+    &--white {
+      background: #ffffff;
+      color: #3f3f3f;
+      border: 1px solid #3f3f3f;
+      &:hover {
+        border: 7px solid rgb(255, 204, 143);
+        background: #ff8a00;
+        background: #ff8a00;
+        border-radius: 50%;
+      }
+    }
+  }
+  &-drawer {
+    margin: 65px 0 50px 0;
+    max-width: 1065px;
+    width: 100%;
+    height: 1px;
+    background: rgba(46, 45, 45, 0.2);
+  }
+  &-searchContainer {
+    &:hover {
+      cursor: pointer;
+    }
+    text-align: center;
+    margin: 72px 0 0 0;
+    & input {
+      height: 44px;
+      max-width: 550px;
+      width: 100%;
+      outline: none;
+      border: none;
+      font-family: "montserrat-bold";
+      font-size: 36px;
+      line-height: 44px;
+      &::placeholder {
+        color: #3f3f3f;
+        opacity: 0.2;
+      }
+    }
+  }
+  &-choosenClassContainer {
+    max-width: 1530px;
+    margin: 0 auto;
+    margin-top: 85px;
+    &:not(first-child) {
+      margin-top: 75px;
+    }
+  }
+  &-choosenClass {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  &-choosenClassText {
+    max-width: 1066px;
+  }
+  &-text {
+    font-family: "open_sansregular";
+    font-size: 22px;
+    line-height: 30px;
+    color: #000000;
+  }
+  &-showAll {
+    font-family: "open_sansregular";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 23px;
+    color: #3f3f3f;
+  }
+}
+.orangeBtn {
+  transition: 0.3s;
+  background: #ff8a00;
+  border: 2px solid #ff8a00;
+  &-link {
+    font-family: "open_sansbold";
+    display: inline-block;
+    vertical-align: top;
+    padding: 24px 30px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+    color: #fff;
+    min-width: 230px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  &:hover {
+    background: white;
+    .orangeBtn-link {
+      color: #ff8a00;
+    }
+  }
+}
+.arrowContainer {
+  margin: 22px 12px 0 0;
+  display: inline-block;
+}
+.arrow {
+  display: inline-block;
+  max-width: 14px;
+  max-height: 12px;
+  padding: 14px 15px;
+  border: 1px solid #3f3f3f;
+  border-radius: 50%;
+  &:hover {
+    border: 1px solid #ff8a00;
+  }
+}
+
+@media (max-width: 850px) {
+  .popupTm {
+    &-logo {
+      max-width: 100px;
+    }
+    &-logoContainer {
+      padding: 10px 0 0 0;
+      margin: 10px 0 0 10px;
+    }
+    &-title {
+      font-size: 48px;
+      margin-top: 17%;
+    }
+  }
+  &-formBtn {
+    margin-top: 4px;
+  }
+}
+@media (max-width: 480px) {
+  .popupTm {
+    &-title {
+      font-size: 36px;
+      margin-top: 12%;
+    }
+  }
+}
