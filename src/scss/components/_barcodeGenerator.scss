@@ -1,0 +1,86 @@
+.barcodeTtl {
+  padding-top: 108px;
+  background: #fcf8f8;
+  &-title {
+    font-family: "montserrat-bold";
+    font-weight: bold;
+    text-align: center;
+    font-size: 64px;
+    line-height: 140%;
+    color: #3f3f3f;
+    padding-top: 107px;
+    font-weight: 700;
+  }
+  &-imgWrap {
+    text-align: center;
+    margin: 80px 0 0 0;
+    padding: 0 0 108px 0;
+  }
+  &-img {
+    display: inline-block;
+  }
+}
+.barcodeFormat {
+  max-width: 1530px;
+  margin: 0 auto;
+  &-wrapper {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &-groupWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 100px 0;
+  }
+  &-title {
+    font-family: "montserrat-bold";
+    font-size: 30px;
+    line-height: 150%;
+    color: #3f3f3f;
+    margin: 91px 0 43px 0;
+  }
+  &-format {
+    font-family: "open_sansregular";
+    font-size: 20px;
+  }
+  &-img {
+  }
+  &-description {
+    font-family: "open_sansitalic";
+    font-size: 16px;
+    margin: 12px 0 23px 0;
+  }
+}
+
+.roundCheckbox {
+  position: relative;
+  &-label {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 23px;
+    left: 0;
+    display: inherit;
+    top: 0;
+    width: 23px;
+  }
+  &-input {
+    visibility: hidden;
+  }
+}
+
+.roundCheckbox input[type="checkbox"]:checked + label {
+  background-color: #ff8a00;
+  width: 15px;
+  height: 15px;
+  border: 5px solid rgba(255, 138, 0, 0.5);
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+
+.roundCheckbox input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+}

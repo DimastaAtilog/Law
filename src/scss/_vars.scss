@@ -1,9 +1,35 @@
-$ffOpenSansBold: "open_sansbold";
-$ffOpenSansReg: "open_sansregular";
-$ffMontReg: "montserrat-regular";
-$ffMontBold: "montserrat-bold";
+// $ffOpenSansBold: "open_sansbold";
+// $ffOpenSansReg: "open_sansregular";
+// $ffMontReg: "montserrat-regular";
+// $ffMontBold: "montserrat-bold";
 
 .container {
   max-width: 1837px;
   margin: 0 auto;
+}
+.orangeBtn {
+  transition: 0.3s;
+  background: #ff8a00;
+  border: 2px solid #ff8a00;
+  max-width: 225px;
+  &-link {
+    font-family: "open_sansbold";
+    display: inline-block;
+    vertical-align: top;
+    padding: 24px 0px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+    color: #fff;
+    min-width: 230px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  &:hover {
+    background: white;
+    .orangeBtn-link {
+      color: #ff8a00;
+    }
+  }
 }

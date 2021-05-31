@@ -134,126 +134,111 @@
   color: #ff8a00;
 }
 
-.case {
-  background-color: #fcf8f8;
-  padding: 235px 0 0 0;
+.barcodeTtl {
+  padding-top: 108px;
+  background: #fcf8f8;
 }
 
-.case-logoWrapper {
-  text-align: center;
-}
-
-.case-logoWrapper-logo {
-  display: inline-block;
-  width: 150px;
-  height: 150px;
-}
-
-.case-title {
-  color: #3f3f3f;
-  text-align: center;
+.barcodeTtl-title {
   font-family: "montserrat-bold";
-  font-size: 64px;
-  margin: 54px 0 55px 0;
+  font-weight: bold;
   text-align: center;
-  font-family: "montserrat-bold";
   font-size: 64px;
   line-height: 140%;
   color: #3f3f3f;
+  padding-top: 107px;
+  font-weight: 700;
 }
 
-.case-titleDescription {
-  font-family: "open_sansregular";
-  font-size: 20px;
-  line-height: 160%;
-  margin: 0 auto;
+.barcodeTtl-imgWrap {
   text-align: center;
-  color: #3f3f3f;
-  max-width: 1073px;
+  margin: 80px 0 0 0;
+  padding: 0 0 108px 0;
 }
 
-.case-titleTxtWrapper {
-  text-align: center;
-  margin: 72px 0 0 0;
-  padding: 0 0 234px;
-}
-
-.case-caseTxt {
+.barcodeTtl-img {
   display: inline-block;
-  font-size: 14px;
-  color: #d0c5c5;
-  font-family: "open_sansregular";
-  margin: 0 9px 0 0;
 }
 
-.case-caseTxt--orange {
-  font-family: "open_sansitalic";
-  color: #ff8a00;
-}
-
-.caseDescription {
-  padding: 0 0 110px 0;
-  border: 1px solid red;
-}
-
-.caseDescription-wrapper {
-  max-width: 1617px;
+.barcodeFormat {
+  max-width: 1530px;
   margin: 0 auto;
-  margin-top: 153px;
-  position: relative;
 }
 
-.caseDescription-case {
-  position: relative;
-  padding: 94px 0 0 0;
+.barcodeFormat-wrapper {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.caseDescription-title {
+.barcodeFormat-groupWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 0 100px 0;
+}
+
+.barcodeFormat-title {
   font-family: "montserrat-bold";
   font-size: 30px;
   line-height: 150%;
   color: #3f3f3f;
+  margin: 91px 0 43px 0;
 }
 
-.caseDescription-description {
+.barcodeFormat-format {
   font-family: "open_sansregular";
   font-size: 20px;
-  line-height: 27px;
-  color: #000000;
-  max-width: 807px;
-  margin-bottom: 27px;
 }
 
-.caseDescription-description--moreMargin {
-  margin-top: 28px;
+.barcodeFormat-description {
+  font-family: "open_sansitalic";
+  font-size: 16px;
+  margin: 12px 0 23px 0;
 }
 
-.caseDescription-greyDesignedBox {
-  position: absolute;
-  width: 430px;
-  height: 1037px;
-  background: #c4c4c4;
-  opacity: 0.2;
-  right: 0;
+.roundCheckbox {
+  position: relative;
 }
 
-.caseDescription-salmonDesignedBox {
-  position: absolute;
-  width: 442px;
-  height: 376px;
-  right: 179px;
-  top: 550px;
-  background: #FF8A00;
-  opacity: 0.5;
-  -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
+.roundCheckbox-label {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 23px;
+  left: 0;
+  display: inherit;
+  top: 0;
+  width: 23px;
 }
 
-.caseDocuments-title {
-  color: #3f3f3f;
-  text-align: center;
-  font-family: "montserrat-bold";
-  font-size: 64px;
-  margin: 210px 0 80px 0;
+.roundCheckbox-input {
+  visibility: hidden;
+}
+
+.roundCheckbox input[type="checkbox"]:checked + label {
+  background-color: #ff8a00;
+  width: 15px;
+  height: 15px;
+  border: 5px solid rgba(255, 138, 0, 0.5);
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+
+.roundCheckbox input[type="checkbox"]:checked + label:after {
+  opacity: 1;
 }
